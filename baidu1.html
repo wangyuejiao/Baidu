@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./baidu1.css" rel="stylesheet">
+    <style>
+        body{
+            background-image: url("./images/reg_bg_min.jpg");
+        } 
+    </style>
+</head>
+<body>
+    <div class="top">
+        <img src='./images/baidu.png' class="top-img">
+     </div>
+     <div class='between'>
+         <p class="between1">用科技</p>
+         <p class="between2">让复杂的世界更简单</p>
+     </div>
+     <div class='right'>
+         <div class='right10'>
+            <h3 class="right1">欢迎注册</h3>
+            <p class="right2">已有帐号？<span id="login_btn" class="login">登录</span></p>
+        </div>
+        <div class="right3">
+            <form autocomplete="off"  method="POST">
+                <div>
+                    <div class="user">
+                        <span id='tipText'>设置之后不可更改，中英文均可，最长14个英文或7个汉字</span>
+                    </div>
+                    <label class="right4">用户名</label>
+                    <input id='username' class="right5" type="text" name="userName" autocomplete="off" value="" placeholder="请设置用户名">
+                    <span id='usernull' class="usernull" ></span>
+                </div>
+                <br>
+
+                <div>
+                    <label class="phone">手机号</label>
+                    <input id='tel' class="right6" maxlength="11" type="text"  autocomplete="off" value="" placeholder="可用于登录和找回密码">
+                    <!-- <div id='correct'>
+                        <span >√</span>
+                    </div> -->
+                    <span id='phonenull' class="phonenull" ></span>
+                </div>
+
+
+                <div>
+                    <div class="password">
+                        <p id='p1'>长度为8~14个字符</p>
+                        <p id='p2'>字母或数字以及标点符号至少包含两种</p>
+                        <p id='p2'>不允许空格、中文</p>
+                    </div>
+                    <label class="password1">密&nbsp;&nbsp;码</label>
+                    <input id='pwd' class="right7" maxlength="11" type="password"  autocomplete="off" value="" placeholder="请设置登录密码">
+                    <span id='pwdnull' class="pwdnull" ></span>
+                </div>
+
+
+                <div>
+                    <label class="erweima">验证码</label>
+                    <input class="right8" type="text" maxlength="6" name="userName" autocomplete="off" value="" placeholder="请输入验证码">
+                    <input  class="right9"  type="button" value="获取验证码" autocomplete="off">
+                    <span id='manull' class="manull" >请求超时，请稍后再试</span>
+                </div>
+
+                <button class="right11"> 注册</button>
+                <p class="read">
+                   <input type="checkbox">
+                   <label>阅读并接受</label>
+                   <a href='http://passport.baidu.com/static/passpc-account/html/protocal.html'>《百度用户协议》 </a>及
+                   <a href='http://privacy.baidu.com/mdetail?id=288'>《百度隐私权保护声明》</a>
+                </p>
+            </form>
+        </div >
+
+
+
+     </div>
+</body>
+<script src="https://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+<script type="text/javascript" src="./baidu1.js"></script>
+</html>
